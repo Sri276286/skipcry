@@ -1,0 +1,18 @@
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Branch</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (item of products; track $index) {
+    <tr>
+      <td>{{ item.id }}</td>
+      <td>{{ item.name }}</td>
+      <td>{{ item.branch }}</td>
+    </tr>
+    }
+  </tbody>
+</table>
